@@ -29,8 +29,14 @@ spec:
             cpu: "250m"
         env:
         - name: MONGO_INITDB_ROOT_USERNAME
-          value: 
+          valueFrom: 
+            secretKeyRef:
+              name: mongo-secret
+              key: mongo-root-username
         - name: MONGO_INITDB_ROOT_PASSWORD
-          value:
-          
+          valueFrom: 
+            secretKeyRef:
+              name: mongo-secret
+              key: mongo-root-password
+
         
