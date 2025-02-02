@@ -10,6 +10,7 @@ spec:
     repoURL: https://github.com/anildiwan/argocd-app-config-main.git
     targetRevision: HEAD
     path: dev/mongo-app
+    
   destination: 
     server: https://kubernetes.default.svc
     namespace: mongodb
@@ -21,3 +22,4 @@ spec:
     automated:
       selfHeal: false
       prune: true
+      
