@@ -56,5 +56,5 @@ spec:
   ports:
   - port: 8081
     targetPort: 8081
-    nodePort: 30267
+    nodePort: 30268
     protocol: TCP
