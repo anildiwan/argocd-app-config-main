@@ -13,6 +13,6 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: mongoexpress-service.mongodb
+            name: mongoexpress-service
             port:
               number: 8081
