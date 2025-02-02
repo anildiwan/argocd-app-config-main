@@ -4,11 +4,9 @@ kind: Ingress
 metadata:
   name: mongoexpress-ingress
   namespace: mongodb
-  annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
-  - host: mongoexpress.mongodb
+  - host: localmongo.db
     http: 
       paths: 
       - path: /
